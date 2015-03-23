@@ -1,0 +1,167 @@
+/* remove borders around screen */
+body { 
+padding:0; 
+margin:0; 
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	border: none;
+}
+
+/* entire music sheet div */
+#musicSheet{
+	display: none;
+}
+
+#chooseStaffText{
+	display: block;
+	text-align: center;
+}
+
+/* bars */
+.blackBar{
+	border: 0;
+	width: 100%;
+	height: 1%;
+	background-color: gray;
+}
+
+.blackBar:active{
+	background-color: red;
+}
+
+.whiteBar{
+	border: 0;
+	padding-top: 5%;
+	width: 100%;
+	background-color: white;
+}
+
+.whiteBar:active{
+	background-color: green;
+}
+
+.tealBar{
+	border: 0;
+	padding-top: 45%;
+	width: 100%;
+	background-color: #009688;
+}
+
+.noteDrawer{
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 25%;
+	bottom: 0;
+	background-color: #B2DFDB;
+	opacity: 0.8;
+	z-index: 100; /* have this thing in the front at all times */
+}
+
+/* music notes */
+.treble{
+	position: absolute;
+	display: block;
+	top: 10vh;
+	width: 20vh;
+	height: auto;
+	left: 10%;
+}
+
+.bass{
+	position: absolute;
+	display: block;
+	top: 10vh;
+	width: 20vh;
+	height: auto;
+	right: 10%;
+}
+
+
+.quarter_note{
+	position: absolute;
+	bottom: 5vh;
+	width: 5vh;
+	left: 10vw;
+}
+
+.half_note{
+	position: absolute;
+	bottom: 5vh;
+	width: 5vh;
+	left: 20vw;
+}
+
+.whole_note{
+	position: absolute;
+	bottom: 10vh;
+	width: 5vh;
+	left: 30vw;
+}
+
+/* notes and breaks */
+.notes{
+	position:fixed;
+	display: block;
+	bottom: 15%;
+	width: 20vh;
+	height: auto;
+	right: 10%;
+	border: solid 1px black;
+}
+
+.notesBackground{
+	display: inline-block;
+	right: 0;
+	border: 0;
+	padding-top: 45%;
+	width: 49%;
+	background-color: #009688;
+}
+
+.rest{
+	position: fixed;
+	display: block;
+	bottom: 20%;
+	width: 20vh;
+	height: auto;
+	left: 10%;
+	border: solid 1px black;
+}
+
+.restBackground{
+	display: inline-block;
+	left: 0;
+	border: 0;
+	padding-top: 45%;
+	width: 49%;
+	background-color: #F44336;
+}
+
+/* bottom part of the app: Delete and Add */
+.delete{
+	border: 0;
+	position: fixed;
+	bottom: 0;
+	right: 50%;
+	width: 50%;
+	height: 10%;
+	background-color: purple;
+	z-index: -1;
+}
+
+
+.add{
+	border: 0;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	width: 50%;
+	height: 10%;
+	background-color: yellow;
+	z-index: -1;
+}
+

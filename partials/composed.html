@@ -1,0 +1,44 @@
+<body>
+	<div id="musicSheet">
+		<!-- The music sheets. Lines can be pressed and opens up "notes" drawer-->
+		<!-- Numers in the functions are used for position of the notes -->
+		<div class="tealBar"></div>
+		<input type="button" class="blackBar" onclick="openNotes(0)"></input>
+		<input type="button" class="whiteBar" onclick="openNotes(1)"></input>
+		<input type="button" class="blackBar" onclick="openNotes(2)"></input>
+		<input type="button" class="whiteBar" onclick="openNotes(3)"></input>
+		<input type="button" class="blackBar" onclick="openNotes(4)"></input>
+		<input type="button" class="whiteBar" onclick="openNotes(5)"></input>
+		<input type="button" class="blackBar" onclick="openNotes(6)"></input>
+		<input type="button" class="whiteBar" onclick="openNotes(7)"></input>
+		<input type="button" class="blackBar" onclick="openNotes(8)"></input>
+			<div class="notesBackground"></div>
+			<div class="restBackground"></div>
+		
+		<!-- notes and breaks -->
+		<a href="" type="button" onclick=""><img class="notes" src="img/note.png"></img></a>
+		<a href="" type="button" onclick=""><img class="rest" src="img/rest.png"></img></a>
+		
+		<!-- add and delete button -->
+		<input type="button" class="delete" onclick="deletePressed()">delete</input>
+		<input type="button" class="add" onclick="addPressed()">add</input>
+
+		<!-- end Music Sheet -->
+	</div>
+	
+	<!-- Clef note positioned at the front of the music sheet -->
+	<h1 id="chooseStaffText">Choose your staff</h1>
+	<h1 id="bassText" style="top:50%; left:15%; position:absolute; display:block">Bass</h1>
+	<h1 id="trebleText" style="top:50%; right:15%; position:absolute; display:block">Treble</h1>
+	<a href="" onClick="trebleOrBass('treble')"><img id="symbolTreble" class="treble" src="img/treble.png"></img></a>
+	<a href="" onClick="trebleOrBass('bass')"><img id="symbolBass" class="bass" src="img/bass.png"></img></a>
+	
+	<!-- app drawer, will delete once hammerjs works -->
+	<div id="showDrawer" class="noteDrawer">
+		 <input class="quarter_note" type="image" src="img/quarter_note.png" onclick="noteToSheet('img/quarter_note.png')"></input>
+		 <input class="half_note" type="image" src="img/half_note.png" onclick="noteToSheet('img/half_note.png')"></input>
+		 <input class="whole_note" type="image" src="img/whole_note.png" onclick="noteToSheet('img/whole_note.png')"></input>
+	</div>
+	
+	
+</body>
